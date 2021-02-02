@@ -18,6 +18,19 @@ function setup(){
     engine = Engine.create();
     world = engine.world;
 
+    var array1 = [1,2,3,4,5];
+    var array2 = [100,200,300];
+    var array3 = [];
+    array3.push(array2);
+    console.table(array3);
+    array3.push(array1);
+    console.table(array3);
+    console.log(array1);
+    console.log(array1[3]);
+    array1.push(100);
+    console.log(array1);
+    array1.pop();
+    console.log(array1);
 
     ground = new Ground(600,height,1200,20);
     platform = new Ground(150, 305, 300, 170);
